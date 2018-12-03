@@ -26,12 +26,12 @@ export default class Elf {
   		height: 80,
   		startX: 0,
   		startY: 0,
-  		url: '../assets/images/hover.png',
+  		url: './assets/images/hover.png',
     });
 
     this.deadClock = 0;
 
-    this.spriteUrl = '../assets/images/elf.png';
+    this.spriteUrl = './assets/images/elf.png';
 
     // create sprite
     this.sprite = new AnimatedSprite({

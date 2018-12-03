@@ -12,7 +12,7 @@ export default class Endscreen {
   		height: 720,
   		startX: 0,
   		startY: 0,
-  		url: '../assets/images/gameover.png',
+  		url: './assets/images/gameover.png',
     });
 
     this.win = new Sprite({
@@ -22,7 +22,7 @@ export default class Endscreen {
   		height: 720,
   		startX: 0,
   		startY: 0,
-  		url: '../assets/images/win.png',
+  		url: './assets/images/win.png',
     });
   }
 

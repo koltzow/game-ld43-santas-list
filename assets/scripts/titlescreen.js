@@ -10,7 +10,7 @@ export default class Titlescreen {
   		height: 720,
   		startX: 0,
   		startY: 0,
-  		url: '../assets/images/titlescreen.png',
+  		url: './assets/images/titlescreen.png',
     });
   }
 

@@ -29,47 +29,47 @@ export default class Game {
     this.audio = new Audio();
     this.audio.loadManifest([
       {
-        url: '../assets/sounds/main.mp3',
+        url: './assets/sounds/main.mp3',
         id: 'main',
         autoplay: false
       },
       {
-        url: '../assets/sounds/punch.mp3',
+        url: './assets/sounds/punch.mp3',
         id: 'punch',
         autoplay: false
       },
       {
-        url: '../assets/sounds/death.wav',
+        url: './assets/sounds/death.wav',
         id: 'death',
         autoplay: false
       },
       {
-        url: '../assets/sounds/hit0.mp3',
+        url: './assets/sounds/hit0.mp3',
         id: 'hit0',
         autoplay: false
       },
       {
-        url: '../assets/sounds/hit1.mp3',
+        url: './assets/sounds/hit1.mp3',
         id: 'hit1',
         autoplay: false
       },
       {
-        url: '../assets/sounds/hit2.mp3',
+        url: './assets/sounds/hit2.mp3',
         id: 'hit2',
         autoplay: false
       },
       {
-        url: '../assets/sounds/hit3.mp3',
+        url: './assets/sounds/hit3.mp3',
         id: 'hit3',
         autoplay: false
       },
       {
-        url: '../assets/sounds/hit4.mp3',
+        url: './assets/sounds/hit4.mp3',
         id: 'hit4',
         autoplay: false
       },
       {
-        url: '../assets/sounds/hit5.mp3',
+        url: './assets/sounds/hit5.mp3',
         id: 'hit5',
         autoplay: false
       }
@@ -111,7 +111,7 @@ export default class Game {
   		height: 720,
   		startX: 0,
   		startY: 0,
-  		url: '../assets/images/background_01.png',
+  		url: './assets/images/background_01.png',
     });
 
     this.ui = new Sprite({
@@ -121,7 +121,7 @@ export default class Game {
   		height: 720,
   		startX: 0,
   		startY: 0,
-  		url: '../assets/images/background_02.png',
+  		url: './assets/images/background_02.png',
     });
 
 
@@ -134,7 +134,7 @@ export default class Game {
       		y: y * 100 + y * 115 + 181,
       		width: 20,
       		height: 46,
-          url: '../assets/images/conveierbelt.png',
+          url: './assets/images/conveierbelt.png',
           currentAnimation: { x:0, y:0, f:20, s:1 }
         }));
       }
@@ -151,7 +151,7 @@ export default class Game {
       		height: 80,
       		startX: 0,
       		startY: 0,
-      		url: '../assets/images/gift.png',
+      		url: './assets/images/gift.png',
         }));
       }
     }

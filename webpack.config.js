@@ -3,7 +3,6 @@ module.exports = {
 	devServer: {
 			inline:true,
 			port: 3000,
-			//host : '10.0.1.4', 
 	},
 	entry: "./index.js",
 	output: {

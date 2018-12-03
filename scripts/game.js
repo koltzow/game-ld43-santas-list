@@ -151,7 +151,7 @@ export default class Game {
       		height: 80,
       		startX: 0,
       		startY: 0,
-      		url: '/assets/images/gift.png',
+      		url: '../assets/images/gift.png',
         }));
       }
     }

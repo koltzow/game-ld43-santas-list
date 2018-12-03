@@ -14,11 +14,15 @@
     "babel-loader": "^8.0.4",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "file-loader": "^2.0.0",
     "jshint": "^2.9.6",
     "jshint-loader": "^0.8.4",
     "node-libs-browser": "^2.1.0",
     "webpack": "^4.26.1",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10"
+  },
+  "dependencies": {
+    "cross-env": "^5.2.0"
   }
 }

@@ -10,6 +10,21 @@ import Effects, {StarBurst} from './effects.js';
 import Titlescreen from './titlescreen.js';
 import Endscreen from './endscreen.js';
 
+import SoundMain from '../assets/sounds/main.mp3';
+import SoundPunch from '../assets/sounds/punch.mp3';
+import SoundDeath from '../assets/sounds/death.wav';
+import SoundHit0 from '../assets/sounds/hit0.mp3';
+import SoundHit1 from '../assets/sounds/hit1.mp3';
+import SoundHit2 from '../assets/sounds/hit2.mp3';
+import SoundHit3 from '../assets/sounds/hit3.mp3';
+import SoundHit4 from '../assets/sounds/hit4.mp3';
+import SoundHit5 from '../assets/sounds/hit5.mp3';
+
+import ImageBackground1 from '../assets/images/background_01.png';
+import ImageBackground2 from '../assets/images/background_02.png';
+import ImageBelt from '../assets/images/conveierbelt.png';
+import ImageGift from '../assets/images/gift.png';
+
 // setup game class
 export default class Game {
 
@@ -29,47 +44,47 @@ export default class Game {
     this.audio = new Audio();
     this.audio.loadManifest([
       {
-        url: './assets/sounds/main.mp3',
+        url: SoundMain,
         id: 'main',
         autoplay: false
       },
       {
-        url: './assets/sounds/punch.mp3',
+        url: SoundPunch,
         id: 'punch',
         autoplay: false
       },
       {
-        url: './assets/sounds/death.wav',
+        url: SoundDeath,
         id: 'death',
         autoplay: false
       },
       {
-        url: './assets/sounds/hit0.mp3',
+        url: SoundHit0,
         id: 'hit0',
         autoplay: false
       },
       {
-        url: './assets/sounds/hit1.mp3',
+        url: SoundHit1,
         id: 'hit1',
         autoplay: false
       },
       {
-        url: './assets/sounds/hit2.mp3',
+        url: SoundHit2,
         id: 'hit2',
         autoplay: false
       },
       {
-        url: './assets/sounds/hit3.mp3',
+        url: SoundHit3,
         id: 'hit3',
         autoplay: false
       },
       {
-        url: './assets/sounds/hit4.mp3',
+        url: SoundHit4,
         id: 'hit4',
         autoplay: false
       },
       {
-        url: './assets/sounds/hit5.mp3',
+        url: SoundHit5,
         id: 'hit5',
         autoplay: false
       }
@@ -111,7 +126,7 @@ export default class Game {
   		height: 720,
   		startX: 0,
   		startY: 0,
-  		url: './assets/images/background_01.png',
+  		url: ImageBackground1,
     });
 
     this.ui = new Sprite({
@@ -121,7 +136,7 @@ export default class Game {
   		height: 720,
   		startX: 0,
   		startY: 0,
-  		url: './assets/images/background_02.png',
+  		url: ImageBackground2,
     });
 
 
@@ -134,7 +149,7 @@ export default class Game {
       		y: y * 100 + y * 115 + 181,
       		width: 20,
       		height: 46,
-          url: './assets/images/conveierbelt.png',
+          url: ImageBelt,
           currentAnimation: { x:0, y:0, f:20, s:1 }
         }));
       }
@@ -151,7 +166,7 @@ export default class Game {
       		height: 80,
       		startX: 0,
       		startY: 0,
-      		url: './assets/images/gift.png',
+      		url: ImageGift,
         }));
       }
     }

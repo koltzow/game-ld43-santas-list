@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
 	mode: "development",
 	devServer: {
@@ -6,7 +8,8 @@ module.exports = {
 	},
 	entry: "./index.js",
 	output: {
-			filename: "bundle.js"
+			filename: "bundle.js",
+      path: path.resolve(__dirname, 'docs'),
 	},
 	module: {
 			rules: [
@@ -18,7 +21,15 @@ module.exports = {
       					cacheDirectory: true,
       					presets: ['react', 'es2015']
     				}
-  				}
+  				},
+					{
+						test: /\.(jpe?g|png|gif|svg)$/i,
+						use: 'file-loader?limit=100000&name=./images/[hash].[ext]'
+					},
+					{
+					  test: /\.(ogg|mp3|wav|mpe?g)$/i,
+					  use: 'file-loader?limit=100000&name=./sounds/[hash].[ext]'
+					}
 			]
 	},
 	resolve: {

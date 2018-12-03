@@ -1,6 +1,9 @@
 import AnimatedSprite from './animatedsprite.js';
 import Sprite from './sprite.js';
 
+import ImageHover from '../assets/images/hover.png';
+import ImageElf from '../assets/images/elf.png';
+
 export default class Elf {
 
   constructor(x = 0, y = 0, row = 0) {
@@ -26,12 +29,12 @@ export default class Elf {
   		height: 80,
   		startX: 0,
   		startY: 0,
-  		url: './assets/images/hover.png',
+  		url: ImageHover,
     });
 
     this.deadClock = 0;
 
-    this.spriteUrl = './assets/images/elf.png';
+    this.spriteUrl = ImageElf;
 
     // create sprite
     this.sprite = new AnimatedSprite({

@@ -1,37 +1,44 @@
-## Welcome to GitHub Pages
+## Santa's List
 
-You can use the [editor on GitHub](https://github.com/Koltzow/game-ld43-santas-list/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This is a game for Ludum Dare 43
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+[link to game page on ldjam](https://ldjam.com/events/ludum-dare/43/santas-list)
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Installation
 
-```markdown
-Syntax highlighted code block
+If you've never used Node or npm before, you'll need to install Node. If you
+use homebrew, just run:
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+brew install node
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Otherwise, you can download and install from [here](http://nodejs.org/download/).
 
-### Jekyll Themes
+### Install dependencies
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Koltzow/game-ld43-santas-list/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```
+npm install
+```
 
-### Support or Contact
+This runs through all dependencies listed in `package.json` and installs them
+locally within the project.
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Running dev server
+
+```
+npm start
+```
+
+This will compile your assets and serve them through an [express](https://expressjs.com//) server with
+[webpack-dev-middleware](https://github.com/webpack/webpack-dev-middleware) and
+[webpack-hot-middleware](https://github.com/glenjamin/webpack-hot-middleware).
+
+### Building for production
+
+```
+npm run build
+```
+
+This will minify and hash all assets etc. to the docs folder
